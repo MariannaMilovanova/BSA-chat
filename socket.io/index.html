@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Socket-chat</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id='registration' class="add-User-to-chat">
+        <div class="header-user-text" id = "userHeader">Add New User to the Chat</div>
+        
+        <div class ="form-text">User Name</div>
+        <input type="text" class = "input" id='userName' placeholder = 'name'/>
+        <div class ="form-text">User Nickname</div>
+        <input type="text" class = "input" id='userNickname' placeholder = 'nickname'/>
+        <div class = "add-button"><button id='addButton' class = 'button'>Enter to the chat</button></div>
+    </div>
+    <div class = "chat-wrapper" id = "chat">
+        <div class="chat-body">
+            <div class="chat-header">Web-Chat</span></div>
+            <div class = "chat-main-cont">
+                <div class="chat-participants" id='users-container'>
+                    <ul class = "participants" id = "participants"> </ul>
+                </div>
+                <div class="chat">
+                    <div class="chat-speak" id = "messages"></div>
+                    <div class="is-speaking" id="typing"></div>
+                </div>
+            </div>
+            <div class = "message-my">
+                <input type="text" placeholder = "Type your message here" class="input-mess" id = "text"/>
+                <button id = "textSubmit" class = "sent-btn">Send</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

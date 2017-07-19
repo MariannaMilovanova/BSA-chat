@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body { 
+    height: 100%;
+    font-size: 16px;
+    color: #7B7D7B; 
+}
+
+.add-User-to-chat {
+    border:1px solid #DDDED8;
+    border-radius: 3%;
+    width: 50%;
+    margin: 5% auto;
+    padding: 3%;
+    font-size: 18px; 
+}
+.header-user-text{
+    background-color: #8DCDC3;
+    color:white;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 4%; 
+    font-size: 20px;
+}
+
+.input{
+    padding: 2%;
+    border:2px solid #DDDED8;
+    border-radius: 3%;
+    width:95%;
+}
+.add-button {
+    text-align: right;
+    margin-top: 3%; 
+}
+.button {
+    padding: 2%;
+    font-size: 16px;
+}
+
+.chat-wrapper{
+    border:1px solid #DDDED8;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 2% auto;
+    width: 80%;
+    display: none;
+}
+.chat-body {
+    border:2px solid #94CFC9;
+    border-radius: 10px;
+}
+.chat-header {
+    padding: 2% 2% 2% 6%;
+    background-color: #8DCDC3;
+    color: white;
+    font-size: 20px;
+}
+.chat-main-cont{
+    display: flex;
+}
+.chat {
+    display: flex;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    border:1px solid #DDDED8;
+}
+.is-speaking {
+    height: 5%;
+    color: #B4B4B4;
+    font-style: italic;
+    text-indent: 2%;
+    height: 20px;
+}
+.chat-speak{
+    height: 400px;
+    overflow: auto;
+}
+.chat-participants{
+    border:1px solid #DDDED8;
+    width: 25%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+.chat-user{
+    list-style: none;
+    display: block;
+    padding: 10px 2px 10px 6px;
+    
+    align-self: left;
+}
+.online {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 2%;
+    background-image: url("http://www.iconsdb.com/icons/preview/green/circle-xxl.png"); 
+    background-size: 100%;
+}
+.offline {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 2%;
+    background-image: url("http://www.iconsdb.com/icons/preview/gray/circle-xxl.png"); 
+    background-size: 100%;
+}
+.justEnter {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-right: 2%;
+    background-image: url("http://www.iconsdb.com/icons/preview/tropical-blue/circle-xxl.png"); 
+    background-size: 100%;
+}
+.newMessage {
+    border-bottom: 1px dashed lightgrey;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#highlighted {
+    background-color:#D9FBEA;
+}
+.innerMessage {
+    width: 75%;
+    min-height: 50px;
+    padding-top:2%; 
+    padding-bottom: 2%; 
+    padding-left: 2%; 
+    position: relative;
+    color: blue;
+}
+/*обратить внимание*/
+.innerMessage:nth-child(even) {
+    align-self: flex-end;
+}
+.time {
+    position: absolute;
+    right: 0;
+    top:10px;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: bold;
+    color: #70ada3;
+}
+.bodyDiv {
+    padding-top: 1%;
+    font-style: italic;
+    color: black;
+}
+.message-my {
+    background-color: #d0efec; 
+    padding: 2%;
+}
+.input-mess {
+    padding: 1%;
+    width: 80%;
+}
+.sent-btn{
+    padding: 1% 3% 1% 3%;
+}
+#addButton {
+    padding: 2%;
+    background-color: #6ad168;
+    color:white;
+}
+
+.form-text {
+    color: darkblue;
+    padding-top: 2%;
+    font-style:italic; 
+}
+
+//prev
+/*input#user-id {
+    margin-left: 50px;
+}
+.user-container div {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.user-name {
+    width: 100px;
+}
+
+.message {
+    margin-top: 30px;
+}
+.message button {
+    padding:3px;
+}
+#users-container {
+}
+#users-creating {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+*/
