@@ -1,0 +1,19 @@
+{
+  "name": "bsa-2017-JS-06-Chat-Ajax",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node index.js",
+  },
+  "author": "MM",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-ejs-layouts": "^2.3.0",
+    "express-session": "^1.15.3",
+    "node-inspector": "^1.1.1",
+    "socket.io": "^2.0.3"
+  }
+}
