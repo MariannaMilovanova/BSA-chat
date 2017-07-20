@@ -1,6 +1,7 @@
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+var express = require('express');
 
 let messages = [];
 let users = {};
@@ -18,6 +19,10 @@ app.get('/script.js', function(req, res) {
 app.get('/style.css', function(req, res) {
     res.sendFile(__dirname + '/style.css');
 });
+
+app.use('/img', express.static(__dirname + '/img'));
+
+
 
 io.on('connection', function(socket) {
     console.info('New client connected (id=' + socket.id + ').');

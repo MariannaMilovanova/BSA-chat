@@ -99,7 +99,7 @@ html, body {
     height: 20px;
     float: left;
     margin-right: 2%;
-    background-image: url("http://www.iconsdb.com/icons/preview/green/circle-xxl.png"); 
+    background-image: url("img/green.png"); 
     background-size: 100%;
 }
 .offline {
@@ -107,7 +107,7 @@ html, body {
     height: 20px;
     float: left;
     margin-right: 2%;
-    background-image: url("http://www.iconsdb.com/icons/preview/gray/circle-xxl.png"); 
+    background-image: url("img/grey.png"); 
     background-size: 100%;
 }
 .justEnter {
@@ -115,7 +115,7 @@ html, body {
     height: 20px;
     float: left;
     margin-right: 2%;
-    background-image: url("http://www.iconsdb.com/icons/preview/tropical-blue/circle-xxl.png"); 
+    background-image: url("img/blue.png"); 
     background-size: 100%;
 }
 .newMessage {
